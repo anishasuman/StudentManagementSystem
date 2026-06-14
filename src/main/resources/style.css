@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f64f59 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 520px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35),
+                0 0 0 1px rgba(255,255,255,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2.5px solid #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+input::placeholder {
+    color: #aaa;
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(102, 126, 234, 0.6);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.result {
+    margin-top: 28px;
+    background: linear-gradient(135deg, #f5f7ff, #eef0ff);
+    border-radius: 16px;
+    padding: 24px;
+    border-left: 5px solid #667eea;
+}
+
+.result h2 {
+    margin-bottom: 18px;
+    color: #4a3f8f;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.result p {
+    margin: 12px 0;
+    font-size: 17px;
+    color: #444;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+}
+
+.result p strong {
+    color: #667eea;
+    font-weight: 800;
+    min-width: 80px;
+}
+
+.result p span {
+    color: #222;
+    font-weight: 700;
+}
