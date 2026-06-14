@@ -5,6 +5,8 @@ A Java-based Student Management System developed using **Java Swing**, **JDBC**,
 ## 🌐 Live Demo
 
 **Website:** https://studentmanagementhub.onrender.com
+<img width="959" height="533" alt="image" src="https://github.com/user-attachments/assets/60a167da-dbdf-4807-a09c-4d53963e2262" />
+
 
 ## 🚀 Features
 
